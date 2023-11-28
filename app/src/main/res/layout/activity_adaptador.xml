@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/elementoLista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Vista para mostrar la imagen del álbum -->
+    <ImageView
+        android:id="@+id/imageAlbum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Vista para mostrar el nombre de la canción -->
+    <TextView
+        android:id="@+id/textNombreCancion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageAlbum"
+        app:layout_constraintTop_toTopOf="@+id/imageAlbum" />
+
+    <!-- Vista para mostrar el nombre del autor -->
+
+    <!-- Vista para mostrar el nombre del álbum -->
+    <TextView
+        android:id="@+id/textNombreAutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/textNombreCancion" />
+
+    <TextView
+        android:id="@+id/textNombreAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/textNombreAutor" />
+
+</LinearLayout>
