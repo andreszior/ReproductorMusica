@@ -1,17 +1,14 @@
 package com.example.reproductormusica;
 
-import android.media.Image;
-import android.net.Uri;
-
 import java.io.File;
 
-public class ClaseCanciones {
+public class ClaseCancion {
 
 
 
     long id;
 
-    Uri cancion;
+    File cancion;
     String nombre;
     String artista;
 
@@ -20,14 +17,14 @@ public class ClaseCanciones {
     byte[] imagenAlbum;
 
 
-    public ClaseCanciones(){}
-    public ClaseCanciones(long id, Uri cancion, String nombre){
+    public ClaseCancion(){}
+    public ClaseCancion(long id, File cancion, String nombre){
         this.id = id;
         this.cancion = cancion;
         this.nombre = nombre;
     }
 
-    public ClaseCanciones(long id, Uri cancion, String nombre, String artista, String album, byte[] imagenAlbum) {
+    public ClaseCancion(long id, File cancion, String nombre, String artista, String album, byte[] imagenAlbum) {
         this.id = id;
         this.cancion = cancion;
         this.nombre = nombre;
@@ -55,11 +52,11 @@ public class ClaseCanciones {
     }
 
 
-    public Uri getCancion() {
+    public File getCancion() {
         return cancion;
     }
 
-    public void setCancion(Uri cancion) {
+    public void setCancion(File cancion) {
         this.cancion = cancion;
     }
 

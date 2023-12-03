@@ -30,13 +30,17 @@
         android:contentDescription="Volver a lista de cancioness"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ProgressBar
+    <SeekBar
         android:id="@+id/progressBar"
-        android:layout_width="312dp"
-        android:layout_height="20dp"
+        android:layout_width="311dp"
+        android:layout_height="5dp"
         android:layout_marginBottom="12dp"
         android:backgroundTint="@color/white"
         android:clickable="false"
+        android:indeterminate="false"
+        android:progressBackgroundTint="@color/white"
+        android:progressDrawable="@color/white"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/tempoInicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
